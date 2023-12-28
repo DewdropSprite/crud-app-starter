@@ -2,9 +2,11 @@ const pg = require('pg');
 
 const Pool = pg.Pool;
 
+let databaseName = 'crud_cardio_one'
+
 
 const pool = new Pool({
-  database: 'things', // 👈 CHANGE THIS!
+  database: databaseName, // 👈 CHANGE THIS!
   host: 'localhost',
   port: 5432,
 });

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,21 @@
   <link rel="stylesheet" href="./styles/style.css">
   <script defer src="./scripts/axios.js"></script>
   <script defer src="./scripts/client.js"></script>
-  <title>CRUD Starter</title>
+  <title>🐻Let's GET Creatures🐻</title>
 </head>
+
 <body>
-  <h1>CRUD Starter</h1>
+  <h1>🐻Let's GET Creatures🐻</h1>
+  <form>
+    <input id="nameInput" type="text" placeholder="Name">
+    <input id="typeInput" type="text" placeholder="Type of Creature">
+    <button id="submitButton" type="button" onclick="submitCreatureButton(event)">Submit</button>
+  </form>
+  
+  <h3> Here are some Creatures: </h3>
+  <section id = "creatureList">
+
+  </section>
 </body>
+
 </html>
