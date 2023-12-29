@@ -1,12 +1,9 @@
 const pg = require('pg'); 
 
-const Pool = pg.Pool;
+// const Pool = pg.Pool;
 
-let databaseName = 'crud_cardio_one'
-
-
-const pool = new Pool({
-  database: databaseName, // 👈 CHANGE THIS!
+const pool = new pg.Pool({
+  database: "crud_cardio_one", // 👈 CHANGE THIS!
   host: 'localhost',
   port: 5432,
 });
